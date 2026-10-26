@@ -1,39 +1,20 @@
-## React
+# Student Internship Portal
 
-This is a simple React application. This application serves as a basic template for a react applications.  
-This project is bootstrapped with [Vite](https://vitejs.dev/guide/).
+A React and Express application for browsing internships and submitting student applications. Applications are stored in MongoDB using Mongoose.
 
-## How to run
+## Features
 
-1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
+- Internship list and details pages with React Router
+- Application form for student name, email, roll number, and selected internship
+- Required-field and email validation in the browser
+- Express API with routes to submit and retrieve applications
+- Mongoose schema validation and timestamps
+- MongoDB connection configured through `server/.env`
 
-   ```sh
-   npm install
-   ```
+## Run in Nimbus
 
-2. Once dependencies are installed, run the following command to start the application:
+Run the frontend from the project root:
 
-   ```sh
-   npm run dev
-   ```
-
-3. Refresh the URL in simple browser to see the output.
-
-## FAQs & Debugging
-
-### 1. I do not see browser in my workspace
-
-Studio will automatically open the app in a new browser tab. If not, you can use the following steps to open the simple browser
-
-1. From VS Code command pallette(`Ctrl/Cmd + Shift + P`), run **Studio Manager: SimpleBrowser Default URL** command. This will open the app in a new browser tab.
-
-2. Your app runs on hosted env which can be accessed using host id, port provided in file **.vscode/.studio/studio-env.json**. Use values to create the URL as follows:
-   `https://<STUDIO_HOST_ID>-3000.<STUDIO_DOMAIN>`
-
-### 2. Getting `vite: not found` error
-
-This means node_modules are missing in your workspace, please refer the 'How to run' section and make sure you have followed the steps in sequence
-
-### 3. Can I use create-react-app instead Vite?
-
-Yes, you can use create-react-app instead Vite, the default workspace is loaded with Vite setup, you can remove the Vite dependencies, add create-react-app dependencies and update the scripts to start using create-react-app.
+```bash
+npm install
+npm run dev
